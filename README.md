@@ -2,7 +2,7 @@
 
 In order to operate this server, you first need:
 
-1 -T o install the node folder, in order to install the specific libraries showned on dependecies
+1 -To install the node folder, in order to install the specific libraries showned on dependecies
 
 2 - Enter your desired Port number, as it shows on the .env.example
 

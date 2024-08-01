@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Project</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="/" method="post">
+      <div class="block">
+        <div class="theFlex">
+          <h1>riddle me this</h1>
+          <h2><%= locals.riddle%></h2>
+          <p class="hidden">
+            <strong style="color: blue; text-decoration: underline"
+              >Answer:</strong
+            >
+            <%= locals.answer %>
+          </p>
+        </div>
+      </div>
+      <input type="submit" class="btn1" value="Next" />
+    </form>
+    <button class="btn">Check Answer</button>
+    <script>
+      let theButtonUnveil = document.querySelector(".btn");
+      let para = document.querySelector(".hidden");
+
+      theButtonUnveil.addEventListener("click", function () {
+        para.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

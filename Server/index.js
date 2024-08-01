@@ -3,8 +3,6 @@ import express from "express";
 import axios from "axios";
 
 const PORT = process.env.PORT ?? 8000;
-// const API_KEY = process.env.API_KEY ?? null;
-// const API_URL = `https://riddles-api.vercel.app/random?APIKEY=${API_KEY}`;
 const API_URL = `https://riddles-api.vercel.app/random`;
 
 const app = express();
